@@ -1,0 +1,6 @@
+.photos{
+    width: 400px;
+    height: 222px;
+    border: 4mm ridge rgba(211, 220, 50, .5);
+    border-radius: 10px 100px / 120px;
+}
