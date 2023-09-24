@@ -13,33 +13,33 @@ body {
   font-family: Roboto, Georgia, "Times New Roman", Times, serif;
 }
 
-.pricing {
+.pricing__container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.pricing-content {
+.pricing__content {
   width: 200px;
   height: 350px;
 }
 
-.pricing-single-photo,
-.pricing-pack-photo,
-.pricing-custom {
+.pricing__option--single,
+.pricing__option--pack,
+.pricing__option--custom {
   background-color: var(--box-light-color);
   margin: 30px;
   border-radius: 20px;
 }
 
-.pricing-content-header {
+.pricing__content-header {
   color: var(--main-text-color);
   text-align: center;
   position: relative;
   top: 30px;
 }
 
-.price-value {
+.pricing__value {
   background-color: var(--box-dark-color);
   border-radius: 20px;
   padding: 10px 20px;
@@ -51,33 +51,33 @@ body {
   font-size: 1.8rem;
 }
 
-.price-value p {
+.pricing__value p {
   color: var(--dark-text-color);
   text-align: center;
 }
 
-.pricing-description-container {
+.pricing__description-container {
   width: 100%;
   text-align: center;
 }
 
-.pricing-description {
+.pricing__description {
   font-size: 1.2rem;
   position: relative;
   padding-inline-start: 0;
   top: 50px;
 }
 
-.pricing-description li {
+.pricing__description li {
   text-transform: lowercase;
 }
 
-.pricing-description-minus {
+.pricing__description-minus {
   display: inline-block;
   list-style-type: "- ";
 }
 
-.pricing-description-plus {
+.pricing__description-plus {
   display: inline-block;
   list-style-type: "+ ";
 }
