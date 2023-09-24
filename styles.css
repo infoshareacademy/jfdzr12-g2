@@ -1,59 +1,83 @@
 :root {
-    --main-text-color: rgb(60, 60, 60);
-    --dark-text-color: rgb(50, 49, 49);
-    --box-light-color: rgb(183, 181, 181);
-    --box-dark-color: rgb(158, 154, 154);
+  --main-text-color: rgb(60, 60, 60);
+  --dark-text-color: rgb(50, 49, 49);
+  --box-light-color: rgb(214, 214, 214);
+  --box-dark-color: rgb(171, 169, 169);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Georgia, "Times New Roman", Times, serif;
 }
 
 .pricing {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-content {
+  width: 200px;
+  height: 350px;
 }
 
 .pricing-single-photo,
 .pricing-pack-photo,
 .pricing-custom {
-    width: 200px;
-    height: 350px;
-    background-color: var(--box-light-color);
-    margin: 30px;
-    border-radius: 20px;
+  background-color: var(--box-light-color);
+  margin: 30px;
+  border-radius: 20px;
 }
 
-.pricing-content h3 {
-    color: var(--main-text-color);
-    font-family: Roboto, Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+.pricing-content-header {
+  color: var(--main-text-color);
+  text-align: center;
+  position: relative;
+  top: 30px;
 }
 
 .price-value {
-    background-color: var(--box-dark-color);
-    border-radius: 20px;
-    padding: 10px 20px;
-    position: relative;
-    top: 40px; 
-    left: -20px;
-    width: 200px;
-    font-weight: bold;
-    font-size: 18px;
+  background-color: var(--box-dark-color);
+  border-radius: 20px;
+  padding: 10px 20px;
+  position: relative;
+  top: 40px;
+  left: -20px;
+  width: 240px;
+  font-weight: bold;
+  font-size: 1.8rem;
 }
 
 .price-value p {
-    color: var(--dark-text-color);
-    font-family: Roboto, Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+  color: var(--dark-text-color);
+  text-align: center;
+}
+
+.pricing-description-container {
+  width: 100%;
+  text-align: center;
 }
 
 .pricing-description {
-    margin-top: 80px;
-    font-family: Roboto, Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  position: relative;
+  padding-inline-start: 0;
+  top: 50px;
+}
+
+.pricing-description li {
+  text-transform: lowercase;
 }
 
 .pricing-description-minus {
-    list-style-type: "- ";
+  display: inline-block;
+  list-style-type: "- ";
 }
 
 .pricing-description-plus {
-    list-style-type: "+ ";
+  display: inline-block;
+  list-style-type: "+ ";
 }
