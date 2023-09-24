@@ -56,15 +56,9 @@ body {
   text-align: center;
 }
 
-.pricing__description-container {
-  width: 100%;
-  text-align: center;
-}
-
 .pricing__description {
   font-size: 1.2rem;
   position: relative;
-  padding-inline-start: 0;
   top: 50px;
 }
 
@@ -73,11 +67,9 @@ body {
 }
 
 .pricing__description-minus {
-  display: inline-block;
   list-style-type: "- ";
 }
 
 .pricing__description-plus {
-  display: inline-block;
   list-style-type: "+ ";
 }
