@@ -1,0 +1,44 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.top {
+    background-color: #ffffff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+.top_list {
+display: flex;
+gap: 1em;
+list-style-type: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+    font-size: 1.3em;
+}
+
+section {
+margin: 100px 120px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+p {
+    width: 300px;
+    height: 200px;
+}
+
+.logo{
+margin-right: 100px;
+}
