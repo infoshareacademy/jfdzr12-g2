@@ -1,5 +1,101 @@
-.gorastrony {
-    display:flex;
-    justify-content:space-between; 
-    align-items: flex-start;
+:root {
+   --main-text-color: rgb(60, 60, 60);
+   --dark-text-color: rgb(50, 49, 49);
+   --box-light-color: rgb(214, 214, 214);
+   --box-dark-color: rgb(171, 169, 169);
+ }
+ 
+ * {
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: Roboto, Georgia, "Times New Roman", Times, serif;
+ }
+
+
+.containter-info {
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 700px;
+   margin: 40px;
+   background: rgba( 255, 251, 251, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+   
 }
+
+
+.info-left {
+   height: 300px;
+   width: 50%;
+   position: relative;
+   padding: 30px;
+   
+   
+
+}
+
+.info-left__text {
+
+   font-weight: 600;
+   font-size: 20px ;
+   color: var(--main-text-color);
+   justify-self: center;
+   text-align: center;
+   text-shadow: 0px 8px 22px rgba(66, 68, 90, 1);
+   margin-top:100px;
+   word-spacing: 5px;
+
+}
+
+.info-right {
+   height: 300px;
+   width: 50%;
+   position: relative;
+   margin: 0 20px 50px 0;
+
+}
+
+.info-right__img {
+   height:400px;
+background: #e0e0e0;
+box-shadow:  31px 31px 45px #929292,
+             -31px -31px 45px #ffffff;
+             border-radius:5%;
+             transform:
+             perspective(800px)
+             rotateY(25deg) scale(0.9)
+             rotateX(10deg);
+           filter: blur(2px);
+           opacity: 0.5;
+           transition: 0.6s ease all; 
+
+}
+.info-right__img:hover {
+   transform:
+   perspective(800px)
+   rotateY(-15deg)
+   translateY(-50px)
+   rotateX(10deg)
+   scale(1);
+ filter: blur(0);
+ opacity: 1;
+
+}
+
+
+@keyframes info-img {
+      0% {
+         transform: scale(0.5);
+      }
+   
+      100% {
+         transform: scale(1);
+      }
+   }
