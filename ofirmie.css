@@ -89,13 +89,3 @@ box-shadow:  31px 31px 45px #929292,
 
 }
 
-
-@keyframes info-img {
-      0% {
-         transform: scale(0.5);
-      }
-   
-      100% {
-         transform: scale(1);
-      }
-   }
